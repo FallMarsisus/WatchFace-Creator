@@ -25,11 +25,11 @@ def relative_to_assets(path: str) -> Path:
 
 def process(name:str):
     showinfo("Choose an image", "Make sure to choose an image with png format with dimensions of 192x490 pixels, otherwize it will be cropped.")
-    image_path = askopenfilename(filetypes=[("Image", "png")])
+    image_path = askopenfilename(filetypes=[("Image", "png, jpg")])
 
     image = Image.open(image_path)
     
-    if image.width > image.height:
+    if image.width < image.height:
         image.thumbnail((10000, 490))
     else: image.thumbnail((192, 1000))
     
