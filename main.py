@@ -14,6 +14,10 @@ from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageFilter
 import subprocess
 
+import os
+
+import shutil
+
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\lance\Documents\Tkinter-Designer-master\build\assets\frame0")
@@ -44,6 +48,16 @@ def process(name:str):
     
     
     subprocess.check_call([r"data/zmake/zmake.exe", path])
+    
+    shutil.rmtree("/output/")
+    
+    os.makedirs("/output")
+    
+    shutil.copytree(path + "dist", "output/") 
+    
+    shutil.rmtree(path + "dist/")
+    shutil.rmtree(path + "build/")
+        
 
 
 window = Tk()
