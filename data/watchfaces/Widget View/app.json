@@ -1,0 +1,92 @@
+{
+    "app": {
+        "appId": 1145143,
+        "appName": "Gaze",
+        "appType": "watchface",
+        "description": "Celia",
+        "icon": "1.png",
+        "vender": "Celia",
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "configVersion": "v2",
+    "debug": true,
+    "defaultLanguage": "en-US",
+    "device": {
+        "platforms": [
+            "nxp"
+        ],
+        "targets": [
+            "gts"
+        ]
+    },
+    "i18n": {
+        "en-US": {
+            "namappNamee": "zepp"
+        }
+    },
+    "module": {
+        "app-side": {
+            "path": "app-side/index"
+        },
+        "app-widget": {
+            "widgets": [
+                "app-widget/index"
+            ]
+        },
+        "page": {
+            "pages": [
+                "pages/index"
+            ],
+            "window": {
+                "backgroundColor": "#eeeeee",
+                "backgroundTextStyle": "light",
+                "navigationBarBackgroundColor": "#ffffff",
+                "navigationBarTextStyle": "black",
+                "navigationBarTitleText": "\u5012\u8ba1\u65f6"
+            }
+        },
+        "setting": {
+            "path": "setting/index"
+        },
+        "watch-widget": {
+            "widgets": []
+        },
+        "watchface": {
+            "editable": 0,
+            "hightCost": 1,
+            "lockscreen": 1,
+            "main": 1,
+            "path": "watchface/index"
+        }
+    },
+    "packageInfo": {
+        "expiredTime": 157680000,
+        "mode": "preview",
+        "timeStamp": 1688852603,
+        "zmake": "v1.9.1",
+        "zpm": "2.6.6"
+    },
+    "permissions": [
+        "gps"
+    ],
+    "platforms": [
+        {
+            "deviceSource": 253,
+            "name": "amazfit-band7"
+        },
+        {
+            "deviceSource": 254,
+            "name": "amazfit-band7-w"
+        }
+    ],
+    "runtime": {
+        "apiVersion": {
+            "compatible": "1.0.0",
+            "minVersion": "1.0.0",
+            "target": "1.0.1"
+        }
+    }
+}
