@@ -4,6 +4,8 @@ A python program to create custom watchfaces for the Band 7 with ease. Just clon
 machine and execute main.py.
 There is currently only one watchface, but will make more soon, along with apps
 
+You can find the modified watchface in /data/watchfaces/Widget View/dist
+
 *Executable version soon !*
 
 ## How it works 
