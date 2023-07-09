@@ -11,4 +11,4 @@ There is currently only one watchface, but will make more soon, along with apps
 I use tkinter library to make the GUI, and [zmake](https://github.com/melianmiko/zmake) program, made by melianmiko to generate the watchface.
 
 ## Screenshots
-![The app](https://i.ibb.co/68rnb0m/Capture-d-cran-2023-07-09-210959.png)
+![The app](assets/screen.png)
